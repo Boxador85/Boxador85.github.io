@@ -7,11 +7,11 @@
     flex-direction: row;
     margin: 0;
   }
-  .nav {
+  .col1 {
     background: blue;
     flex: 1;
   }
-  .col-2 {
+  .col2 {
     display: flex;
     flex-direction: column;
     flex: 7;
