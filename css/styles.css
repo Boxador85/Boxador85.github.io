@@ -8,7 +8,7 @@
     margin: 0;
   }
   
-  .header_nav {
+  .headnav {
   display: flex;     
   list-style: none;
   flex-direction: column;
