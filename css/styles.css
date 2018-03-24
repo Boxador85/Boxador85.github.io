@@ -12,11 +12,10 @@
   display: flex;     
   list-style: none;
   flex-direction: column;
-  z-index: 10;
   justify-content: space-between;
   align-items: center;
-  color: #fff;
-  padding: 35px 100px 0;
+  color: blue;
+  
   
   } 
   .col1 {
