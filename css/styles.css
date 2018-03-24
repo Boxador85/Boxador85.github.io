@@ -7,6 +7,10 @@
     flex-direction: row;
     margin: 0;
   }
+  
+  .header {
+  list-style: none;
+  } 
   .col1 {
     background: blue;
     flex: 1;
@@ -25,7 +29,7 @@
     min-height: 60vh;
   }
   header, footer {
-    list-style: none;
+    
     background: red;
     height: 20vh;
   }
