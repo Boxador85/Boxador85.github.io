@@ -11,6 +11,7 @@
   .header {
   display: flex;     
   list-style: none;
+  flex-direction: column;
   } 
   .col1 {
     background: blue;
