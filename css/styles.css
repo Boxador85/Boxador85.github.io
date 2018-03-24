@@ -33,11 +33,13 @@
     flex: 4;
     min-height: 60vh;
   }
-  header, footer {
-    
-    background: red;
-    height: 20vh;
+  header {    
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: red;
+	padding: 35px 100px 0;
   }
-  header, footer, article, nav {
-    padding: 1em;
-  }
+ 
