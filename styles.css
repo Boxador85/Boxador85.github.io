@@ -8,7 +8,7 @@
     flex-direction: row;
     margin: 0;
   }
-  .col-1 {
+  .nav_header {
     background: #D7E8D4;
     flex: 1;
   }
