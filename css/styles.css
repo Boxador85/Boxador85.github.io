@@ -25,6 +25,7 @@
     min-height: 60vh;
   }
   header, footer {
+    list-style: none;
     background: red;
     height: 20vh;
   }
