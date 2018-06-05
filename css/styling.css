@@ -1,0 +1,249 @@
+/* Hiermit wird die Grundeinstellung für die gesamte Seite konfiguriert*/ 
+html 
+{ 
+	font: 18px arial; 
+ 	color: black; 
+ } 
+
+ 
+ 
+ 
+body  	/*Hintergrund der Website*/ 
+{ 
+    background-image: url("background.jpg"); 
+} 
+
+ 
+
+ 
+
+ 
+
+ul, nav /*Listen ohne Punkte*/  
+{ 
+	list-style: none; 
+} 
+
+
+
+ 
+
+hr 		/* styling der Trennlinie */
+{ 
+	width:1000px; 
+	background-color:gray; 
+	height:5px; 
+	margin-right:0; 
+	text-align:center; 
+	border:2px dotted black;
+} 
+
+
+
+ 
+/* Hiermit werden die Inhalte in allen Sektionen nicht abosulte Positionierung - 
+	Bewirkt dass die unterschiedlichen Sektionen nicht nebeneinandner stehen*/ 
+section 
+{ 
+	display: flex; 
+	flex-direction: column; 
+	align-items: left; 
+	 
+} 
+
+
+
+ 
+/*Abstand der Überschriften zu den Nvigationspunkten*/ 
+section.hero 
+{ 
+    padding-top: 45px; 
+} 
+
+ 
+
+
+ 
+/*Einstellungen für h3 Überschriften der Klasse title */ 
+section h3.title 
+{ 
+	color: black; 
+	 
+	font: bold  'Open Sans', sans-serif; 
+	margin-top: 50px;
+	margin-bottom: 50px; 
+	text-align: left; 
+} 
+
+ 
+
+ 
+/*Einstellungen für p in allen Sectionen*/ 
+section p 
+{ 
+	max-width: 800px; 
+	text-align: center; 
+	margin-bottom: 35px; 
+	padding: 0 20px;/* Abstand oben und Untern 0 ; Links und Rechts 20px*/  
+	line-height: 2; /*Abstand zischen den Zeilen*/ 
+} 
+/*-------------------------------------------*/ 
+
+ 
+/*Hier werden die Einstellungen für die Navigationspunkte gesetzt*/ 
+
+ 
+header nav
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;	/* nicht unterstrichen*/
+	
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.home {
+    background-color: gray;
+}
+
+
+footer
+{
+	font: 13px curier-new;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+li {
+    float: right;
+	text-align: center;
+    padding: 14px 16px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;	/* nicht unterstrichen*/
+	
+}
+
+li a:hover {
+    background-color: #111;
+
+
+/*-------------------------------------------*/ 
+
+ 
+	 
+/*-------------------------------------------*/ 
+/*Größe der h3 wenn größer als 1000px*/ 
+	section.our-work h3 
+	{ 
+		font-size: 40px; 
+		text-align:center; 
+		font-style: italic; /*Kursiv*/ 
+	} 
+
+ 
+
+ 
+/*Einstellungen für die Flexbox der Komponenten*/  
+.flex-container  
+{ 
+	 
+	width: 80%; 
+	display: flex; 
+	justify-content: space-between;/* Abstand zwischen den Komponenten*/ 
+	align-items: center; 
+	color: #414a4f; 
+	flex-wrap: wrap; 
+	     
+} 
+
+
+
+/*Einstellungen für hero h1 wenn größer als 1000px*/ 
+.hero h1 
+{ 
+	font: bold 60px 'Open Sans', sans-serif; 
+	margin-bottom: 15px; 
+	color:#960000; 
+ 
+} 
+ 
+
+ 
+/*Hier können spezielle Einstellungen für max 1000pixel rein*/ 
+@media (max-width: 1000px) 
+{ 
+	 
+	section.hero h1 
+	{ 
+	font-size: 40px; 
+	} 
+ 
+	section.our-work h3 
+	{ 
+		font-size: 25px; 
+		 
+	} 
+
+ 
+	 
+} 
+
+ 
+
+ 
+
+/*Hier können spezielle Einstellungen für max 600pixel rein*/ 
+
+ 
+@media (max-width: 600px) 
+{ 
+
+ 
+	 
+section.hero h1 
+	{ 
+		font-size: 20px; 
+	} 
+ 
+	 
+	header h2 
+{ 
+		margin-bottom: 15px; 
+	} 
+	section.our-work h3 
+{ 
+		font-size: 15px; 
+	} 
+} 
