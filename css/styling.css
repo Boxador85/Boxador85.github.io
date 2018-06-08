@@ -18,7 +18,10 @@ body  	/*Hintergrund der Website*/
 } 
 
  
-
+img.pic
+{
+	max-width:450px;
+}
  
 
  
@@ -142,7 +145,7 @@ li a:hover {
 .flex-container
 {
 	
-	max-width: 65%;
+	max-width: 80%;
 	display: flex;
 	justify-content: space-between;/* Abstand zwischen den Komponenten*/
 	align-items: center;
@@ -154,6 +157,13 @@ li a:hover {
 }
 /*-------------------------------------------*/
 	 
+img.pic
+{
+	max-width:400px;
+	margin-bottom:15px;
+	border:2px solid black;
+	
+}
 
 /*Größe der h3 wenn größer als 1000px*/ 
 	section.our-work h3 
