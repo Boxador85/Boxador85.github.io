@@ -2,7 +2,8 @@
 html 
 { 
 	font: 18px arial; 
- 	color: black; 
+ 	color: black;
+	
  } 
 
  
@@ -10,7 +11,10 @@ html
  
 body  	/*Hintergrund der Website*/ 
 { 
-    background-image: url("background.jpg"); 
+    
+	background-image: url("background.jpg"); 
+	background-attachment: fixed;
+	
 } 
 
  
@@ -24,57 +28,52 @@ ul, nav /*Listen ohne Punkte*/
 	list-style: none; 
 } 
 
-
+h1 
+{
+	font-size: 15px;
+	margin-left: 17px;
+	
+}
 
  
 
 hr 		/* styling der Trennlinie */
 { 
-	width:1000px; 
+	width:70%; 
 	background-color:gray; 
 	height:5px; 
-	margin-right:0; 
-	text-align:center; 
-	border:2px dotted black;
+	margin-left:15%;
+	margin-right:15%;
+	margin-bottom:0;
+	margin-top:0;
+	text-align: center; 
+	border:1px solid black;
 } 
+
+
+section
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
 
 
 
  
-/* Hiermit werden die Inhalte in allen Sektionen nicht abosulte Positionierung - 
-	Bewirkt dass die unterschiedlichen Sektionen nicht nebeneinandner stehen*/ 
-section 
-{ 
-	display: flex; 
-	flex-direction: column; 
-	align-items: left; 
-	 
-} 
-
-
-
- 
-/*Abstand der Überschriften zu den Nvigationspunkten*/ 
-section.hero 
-{ 
-    padding-top: 45px; 
-} 
-
- 
-
-
  
 /*Einstellungen für h3 Überschriften der Klasse title */ 
-section h3.title 
+section h3.title
 { 
-	color: black; 
-	 
-	font: bold  'Open Sans', sans-serif; 
-	margin-top: 50px;
-	margin-bottom: 50px; 
-	text-align: left; 
+	color: red; 
+	text-align: left;
+	font: arial; 
+	margin-top: 35px;
+	margin-bottom: 35px; 
+	
+	
 } 
-
  
 
  
@@ -82,38 +81,46 @@ section h3.title
 section p 
 { 
 	max-width: 800px; 
-	text-align: center; 
-	margin-bottom: 35px; 
-	padding: 0 20px;/* Abstand oben und Untern 0 ; Links und Rechts 20px*/  
-	line-height: 2; /*Abstand zischen den Zeilen*/ 
+	margin-bottom: 10px; 
+	line-height: 2; /*Abstand zwischen den Zeilen*/ 
+	text-align:left;
+	
 } 
-/*-------------------------------------------*/ 
 
+/*Einstellungen für p Teilüberschriften*/
+section p.extend
+{ 
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	color: blue;
+	
+} 
  
-/*Hier werden die Einstellungen für die Navigationspunkte gesetzt*/ 
+/*Einstellungen der Navigationsleiste*/ 
 
- 
-header nav
+ header nav
 ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
+    width:100%;
+	list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+	overflow:hidden;
     
 }
 
 li {
     float: left;
+	text-align: center;
+    padding: 5px 6px;
+	
 }
 
 li a {
-    display: flex;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -122,74 +129,39 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
-}
-
-.home {
     background-color: gray;
 }
 
 
-footer
+
+
+
+/*-------------------------------------------*/ 
+
+ /*Einstellungen für die Flexbox der Bilder*/
+.flex-container
 {
-	font: 13px curier-new;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-li {
-    float: right;
-	text-align: center;
-    padding: 14px 16px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;	/* nicht unterstrichen*/
 	
+	max-width: 65%;
+	display: flex;
+	justify-content: space-between;/* Abstand zwischen den Komponenten*/
+	align-items: center;
+	flex-wrap: wrap;
+	
+	
+
+	    
 }
-
-li a:hover {
-    background-color: #111;
-
-
-/*-------------------------------------------*/ 
-
- 
+/*-------------------------------------------*/
 	 
-/*-------------------------------------------*/ 
+
 /*Größe der h3 wenn größer als 1000px*/ 
 	section.our-work h3 
 	{ 
 		font-size: 40px; 
-		text-align:center; 
+		text-align:left; 
 		font-style: italic; /*Kursiv*/ 
 	} 
-
- 
-
- 
-/*Einstellungen für die Flexbox der Komponenten*/  
-.flex-container  
-{ 
-	 
-	width: 80%; 
-	display: flex; 
-	justify-content: space-between;/* Abstand zwischen den Komponenten*/ 
-	align-items: center; 
-	color: #414a4f; 
-	flex-wrap: wrap; 
-	     
-} 
 
 
 
@@ -203,8 +175,10 @@ li a:hover {
 } 
  
 
+
+
  
-/*Hier können spezielle Einstellungen für max 1000pixel rein*/ 
+/*Einstellungen Auflösung kleiner 1000Pixel*/ 
 @media (max-width: 1000px) 
 { 
 	 
@@ -227,7 +201,7 @@ li a:hover {
 
  
 
-/*Hier können spezielle Einstellungen für max 600pixel rein*/ 
+/*Einstellungen Auflösung kleiner 600Pixel*/ 
 
  
 @media (max-width: 600px) 
