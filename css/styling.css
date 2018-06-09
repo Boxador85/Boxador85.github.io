@@ -1,4 +1,5 @@
-/* Hiermit wird die Grundeinstellung für die gesamte Seite konfiguriert*/ 
+/* Grundeinstellung für die gesamte Seite*/ 
+
 html 
 { 
 	font: 18px arial; 
@@ -9,16 +10,18 @@ html
  
  
 /*Hintergrund der Website*/
+
 body  	
 { 
     
 	background-image: url("background.jpg"); 
-	background-attachment: fixed;
+	background-attachment: fixed; /*Hintergrundbild fixiert, da Farbverlauf*/
 	
 } 
 
  
 /*Listen ohne Punkte*/ 
+
 ul, nav  
 { 
 	list-style: none; 
@@ -35,6 +38,7 @@ h1
 
 
 /* styling der Trennlinie */ 
+
 hr 		
 { 
 	width:70%; 
@@ -50,6 +54,7 @@ hr
 
 
 /*Einstellungen für alle Sektionen*/
+
 section
 {
 	display: flex;
@@ -63,6 +68,7 @@ section
  
  
 /*Einstellungen für h3 Überschriften der Klasse title */ 
+
 section h3.title
 { 
 	color: red; 
@@ -77,6 +83,7 @@ section h3.title
 
  
 /*Einstellungen für p in allen Sektionen*/ 
+
 section p 
 { 
 	max-width: 800px; 
@@ -87,6 +94,7 @@ section p
 } 
 
 /*Einstellungen für p Teilüberschriften*/
+
 section p.extend
 { 
 	margin-top: 0px;
@@ -95,17 +103,18 @@ section p.extend
 	color: blue;
 	
 } 
+
+
+
  
 /*Einstellungen der Navigationsleiste*/ 
+
 header nav
 ul {
     width:100%;
-	list-style-type: none;
-    margin: 0;
+	margin: 0;
     padding: 0;
     background-color: black;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
 	overflow:hidden;
     
@@ -127,7 +136,7 @@ li a {
 }
 
 li a:hover {
-    background-color: gray;
+    background-color: gray;	
 }
 
 
@@ -136,6 +145,7 @@ li a:hover {
 
 
  /*Einstellungen für die Flexbox der Bilder*/
+ 
 .flex-container
 {
 	
@@ -152,6 +162,7 @@ li a:hover {
 
 
 /*Größer der Bilder anpassen*/
+
 img.pic
 {
 	max-width:400px;
@@ -165,20 +176,22 @@ img.pic
 
 
 /*Größe der h3 wenn größer als 1000px*/ 
+
 	section.our-work h3 
 	{ 
-		font-size: 40px; 
+		font-size: 45px; 
 		text-align:center; 
 		font-style: italic; /*Kursiv*/ 
+		
 	} 
 
-
-	
+		
 	
 
 
  
 /*Einstellungen Auflösung kleiner 1000Pixel*/ 
+
 @media (max-width: 1000px) 
 { 
 	 
@@ -187,7 +200,8 @@ img.pic
 	{ 
 		font-size: 25px; 
 		font-style: normal;
-		margin-bottom: 0px;
+		margin-bottom: 5px;
+		
 	} 
 
  
@@ -199,13 +213,15 @@ img.pic
  
 
 /*Einstellungen Auflösung kleiner 600Pixel*/ 
+
 @media (max-width: 600px) 
 { 
 
 	section.our-work h3 
 { 
-		font-size: 15px;
+		font-size: 20px;
 		font-style: normal;
-		margin-bottom: 0px;
+		margin-bottom: 5px;
+		
 	} 
 } 
